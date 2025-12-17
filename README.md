@@ -1,27 +1,10 @@
-# Test
+# Build
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Este proyecto fue Creado con [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
-## Development server
+## Instrucciones
+Clonar el repositorio en una ruta local.
+Abre una terminal de CMD, accede a la ruta de la carpeta contenedora del proyecto y ejecuta el comando npm install para descargar las dependencias necesarias para ejecutar el proyecto.
+Se recomienda levantar el proyecto despues de haber levantado el backend para poder corroborar que se apunte al host correcto del API.
+Abre el CMD y corre el comando `ng serve -o` para levantar el proyecto. Se abrirá en tu navegador por defecto el `http://localhost:4200/`. En algunos casos el host puede variar. Este proyecto se recargará automaticamente al modificar algún archivo. En caso de que el proyecto no conecte con el backend revisar el archivo environment.ts en la ruta src/environment y cambiar el valor de "baseUrl" por el del localhost levantado por el backend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
