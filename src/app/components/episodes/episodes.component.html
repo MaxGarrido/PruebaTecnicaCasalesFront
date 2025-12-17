@@ -1,0 +1,8 @@
+<h2>Episodios de Rick & Morty</h2>
+
+<div *ngFor="let ep of response?.items" class="episode-card">
+  <h3>{{ ep.name }}</h3>
+  <p><strong>Código:</strong> {{ ep.episode }}</p>
+  <p><strong>Fecha de emisión:</strong> {{ ep.air_date }}</p>
+  <p><strong>Personajes:</strong> {{ ep.characters.length }}</p>
+</div>

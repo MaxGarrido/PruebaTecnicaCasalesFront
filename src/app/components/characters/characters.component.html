@@ -1,0 +1,23 @@
+<h1 class="title">Rick & Morty Characters</h1>
+
+<div *ngIf="response" class="container">
+  <p class="page-info">Página {{ response.page }} de {{ response.totalPages }}</p>
+
+  <div class="grid">
+    <div class="character-card" *ngFor="let c of response.items">
+      <img 
+        [src]="c.image" 
+        [alt]="c.name" 
+        (click)="goToDetail(c.id)" 
+        class="character-image"
+      />
+      <h3 class="character-name">{{ c.name }}</h3>
+      <p class="character-details">{{ c.status }} - {{ c.species }} - {{ c.gender }}</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="nav-btn prev-btn" (click)="prevPage()" [disabled]="page === 1">Anterior</button>
+    <button class="nav-btn next-btn" (click)="nextPage()" [disabled]="page === response.totalPages">Siguiente</button>
+  </div>
+</div>

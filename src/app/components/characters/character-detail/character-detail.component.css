@@ -1,0 +1,25 @@
+.detail-card {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.detail-card img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
+}
